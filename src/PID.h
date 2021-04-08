@@ -38,6 +38,11 @@ class PID {
   double p_error;
   double i_error;
   double d_error;
+  
+  // Buffer variables
+  double prev_error;
+  double *d_buffer;
+  double d_sum;
 
   /**
    * PID Coefficients
